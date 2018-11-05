@@ -1,0 +1,8 @@
+[user]
+	name = Patryk Kruk
+	email = patkruk@gmail.com
+[core]
+	editor = vim
+[color]
+	status = auto
+	ui = true

@@ -1,9 +1,9 @@
 #!/bin/bash
 
-dotfiles=(".vimrc" ".gitconfig")
+dotfiles=(".gitignore" ".gitconfig" ".zshrc" ".bash_profile" ".bashrc")
 
 dir="${HOME}/DotFiles"
 
 for dotfile in "${dotfiles[@]}";do
- ln -sf "${HOME}/${dotfile}" "${dir}"
+ ln -sf "${dir}/${dotfile}" "${HOME}/${dotfile}"
 done
