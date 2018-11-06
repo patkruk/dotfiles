@@ -104,7 +104,7 @@ if [ -d "$HOME/Library/Python/2.7/bin" ]; then
     PATH="$HOME/Library/Python/2.7/bin:$PATH"
 fi
 
-alias ll="ls -alFh --color=auto"
+alias ll="ls -alFh"
 alias vi=vim
 
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
