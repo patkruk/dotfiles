@@ -104,8 +104,10 @@ if [ -d "$HOME/Library/Python/2.7/bin" ]; then
     PATH="$HOME/Library/Python/2.7/bin:$PATH"
 fi
 
-alias ll="ls -alh"
+alias ll="ls -alFh --color=auto"
+alias vi=vim
 
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 export GOPATH=$HOME/Dropbox/Code/Go/GOPATH
 export GOBIN=$HOME/go/bin
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin%
@@ -114,3 +116,5 @@ export PATH=/usr/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
