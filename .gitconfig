@@ -6,3 +6,12 @@
 [color]
 	status = auto
 	ui = true
+	branch = auto
+	interactive = auto
+	diff = auto
+[alias]
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bo
+	lg = !"git lg1"
+
